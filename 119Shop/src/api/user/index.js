@@ -27,7 +27,7 @@ export const addAddress = params => post('/user/address', params, {
     tipMsg: '新增地址成功'
 })
 
-export const getAddress = () => get('/user/address')
+export const getAddress = () => get('/user/address/1')
 
 export const updateAddress = params => put('/user/address', params, {
     showTip: true,

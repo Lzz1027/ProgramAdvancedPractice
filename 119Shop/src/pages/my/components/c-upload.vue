@@ -27,7 +27,7 @@
                 isUploading: false,
                 uploadUrl: BASE_URL + '/public/upload-image',
                 headers: {
-                    //'Authorization': dataStore.getToken() || ''
+                    //   'Authorization': dataStore.getToken() || ''
                 }
             }
         },
@@ -71,7 +71,7 @@
             },
             getToken() {
                 return {
-                    //'Authorization': dataStore.getToken() || ''
+                    //  'Authorization': dataStore.getToken() || ''
                 }
             },
             onSuccess(res) {
@@ -86,7 +86,7 @@
 
 <style>
     .c-upload {
-        background-image: url("../../../../public/images/public/head-photo.png");
+        background-image: url("../../../../public/images/public/qq.jpg");
         width: 187px !important;
         height: 187px !important;
         background-size: 187px 187px;

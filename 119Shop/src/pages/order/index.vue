@@ -12,7 +12,7 @@
                 <div class="address-container" :class="(5 % 3) !== 0 ? 'fill-space' : ''">
                     <c-address :is-selected="index === selectedAddressIndex" v-for="(item, index) in addressList"
                                :key="index"
-                               :address="item" @click.native="selectedAddressIndex = index"/>
+                               :address="item" @click.native="abc(index)"/>
                     <c-new-address/>
                 </div>
                 <div class="down-more">
@@ -122,6 +122,10 @@
         },
         methods: {
             // 该表进度条
+            abc(index) {
+                this.selectedAddressIndex = index
+                console.log(this.addressList);
+            },
             changeStep(step) {
                 switch (step) {
                     case 2:

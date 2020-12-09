@@ -2,7 +2,7 @@
     <div class="c-address" :class="isSelected ? 'selected-address' : ''">
         <div class="up-side">
             <div>
-                <img src="../../../public/images/order/head-photo.png"/>
+                <img src="../../../public/images/order/qq.jpg"/>
                 <span>{{address.name || ''}}</span>
             </div>
             <div>
@@ -13,11 +13,11 @@
         <div class="down-side">
             <div>
                 <img src="../../../public/images/order/location.svg"/>
-                <span>{{address.completedAddress | formatString(14)}}</span>
+                <span>{{address.addressTable.completedAddress | formatString(14)}}</span>
             </div>
             <div>
                 <img src="../../../public/images/order/phone.svg"/>
-                <span>{{address.phone || ''}}</span>
+                <span>{{address.addressTable.phone || ''}}</span>
             </div>
         </div>
         <c-edit-address :is-show="isShowEdit" :address="address" @hide="isShowEdit = false"/>

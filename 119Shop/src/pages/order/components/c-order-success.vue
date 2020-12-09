@@ -9,7 +9,7 @@
                 <span>{{orderId}}</span>
             </div>
             <div>
-                <span>待支付：</span>
+                <span>已支付：</span>
                 <c-money class="c-money" :money="totalAmount"/>
             </div>
         </div>

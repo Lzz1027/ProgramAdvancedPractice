@@ -5,7 +5,7 @@
                 <el-col :span="16">
                     <div class="order y-center">
                         <img src="../../../../public/images/my/circle.png">
-                        <span class="date">{{orderItem.createdAt | formatDate}}</span>
+                        <span class="date"> 2020/12/10 </span>
                         <span>订单号：{{orderItem.orderId}}</span>
                     </div>
                 </el-col>

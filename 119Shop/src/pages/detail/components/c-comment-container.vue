@@ -117,12 +117,12 @@
             }
         },
         mounted() {
-            this.getBriefList()
-            this.getCommentList()
-            this.getCommentLikeList()
-            this.$bus.$on('commentLikeChange', (res) => {
-                this.onCommentLikeChange(res)
-            })
+            // this.getBriefList()
+            // this.getCommentList()
+            // this.getCommentLikeList()
+            // this.$bus.$on('commentLikeChange', (res) => {
+            //     this.onCommentLikeChange(res)
+            // })
         }
     }
 </script>

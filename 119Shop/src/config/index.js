@@ -1,9 +1,10 @@
 module.exports = {
     // 服务器根路径
     //  BASE_URL: 'https://mall.cxmmao.com/api-mall',
-     BASE_URL: 'http://172.26.94.91:8081/',
+      BASE_URL: 'http://172.26.202.195:8081/',
     // 图片服务器路径
-    IMAGE_BASE_URL: 'http://172.26.94.91:8081/',
+      IMAGE_BASE_URL: 'http://172.26.202.195:8081/',
+    //  IMAGE_BASE_URL: 'https://mall.cxmmao.com/cat-mall-images/',
     // 成功的状态码
     SUCCESS_CODE: 10000,
     // 未知错误

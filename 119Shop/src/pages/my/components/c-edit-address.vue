@@ -119,7 +119,9 @@
                 })
             },
             updateAddress() {
-                this.$api.user.updateAddress(this._getReqParam()).then(res => {
+                let params = this._getReqParam();
+                params.addressId = parseInt(this.address.addressId)
+                this.$api.user.updateAddress(params).then(res => {
                     console.log(res)
                     this.hide()
                     this.$bus.$emit('updateAddressList')
@@ -161,6 +163,7 @@
                 // 删除地区列表
                 const temp = Object.deepCopy(this.pAddAddress)
                 delete temp.regionList
+                temp.userId = "1"
                 return temp
             },
             _getCompleteAddress() {

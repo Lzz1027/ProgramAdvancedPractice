@@ -73,6 +73,7 @@
                 this.$router.push('/cart')
             },
             addToCart() {
+                pAddToCart.userId = this.$store.getters.getUserInfo.id
                 pAddToCart.goodsId = this.goodsInfo.goodsId
                 pAddToCart.goodsNum = 1
                 this.$api.cart.addToCart(pAddToCart).then(res => {

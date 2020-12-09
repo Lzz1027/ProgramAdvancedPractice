@@ -5,6 +5,7 @@ export const pUpdatePaykey = Object.seal({
 })
 
 export const pRecharge = Object.seal({
+    userId:1,
     rechargeKey: '',
     verifyCode: '',
     email: ''

@@ -1,0 +1,1 @@
+INSERT INTO `user` (`user_id`, `user_name`, `user_phone`, `user_password`, `user_gender`, `user_head_pic`, `user_email`, `user_money`, `user_pay_key`, `user_token`) VALUES (1, '123@qq.com', '15548373472', '123456789', 1, 'img/user.png', '123@qq.com', '84504', '123456', 'haha1');

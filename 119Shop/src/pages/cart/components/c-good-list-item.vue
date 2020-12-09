@@ -41,6 +41,7 @@
                         </el-col>
                         <el-col v-if="isShowAccount" :span="2">
                             <div class="c-del-good" @click="showDelModal(item.goodsId)">
+                                <img src="../../../../public/images/cart/del.png" alt="">
                             </div>
                         </el-col>
                     </el-row>
@@ -214,6 +215,7 @@
             },
             showDelModal(goodsId) {
                 pDeleteFromCart.goodsId = goodsId
+                console.log(pDeleteFromCart.goodsId);
                 this.isShowDel = true
             },
             // 监听数量的变化
@@ -368,10 +370,13 @@
             .c-del-good {
                 width: 24px;
                 height: 24px;
-                background-image: url("../../../../public/images/cart/del.png");
-
+                img{
+                    width: 24px;
+                    height: 24px;
+                    margin: 0;
+                }
                 &:hover, & :active {
-                    background-image: url("../../../../public/images/cart/del-active.png");
+                    opacity: 0.5;
                 }
             }
 

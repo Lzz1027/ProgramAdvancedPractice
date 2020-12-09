@@ -27,6 +27,7 @@ export const pUpdateUserInfo = Object.seal({
 })
 
 export const pAddAddress = {
+    userId: '1',
     name: '',
     phone: '',
     detailedAddress: '',

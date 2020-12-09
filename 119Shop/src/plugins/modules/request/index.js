@@ -285,16 +285,3 @@ const _structureFormData = (formData, sourceData) => {
         formData.append(key, sourceData[key])
     }
 }
-
-// 处理form请求格式的对象数组
-// const _dealWithJsonArray = (objKey,arr = [{}]) => {
-//     const formArr = {}
-//     if(Object.prototype.toString.call(arr[0]) === "[object Object]") {
-//         arr.forEach((item,index) => {
-//             for(let key in item) {
-//                 formArr[`${objKey}[${index}].${key}`] = item[key]
-//             }
-//         })
-//     }
-//     return formArr
-// }

@@ -29,6 +29,8 @@ export default new Vuex.Store({
             if (!data) {
                 state.userInfo = {}
             } else {
+                console.log(state)
+                console.log(data)
                 state.userInfo = {
                     ...state.userInfo,
                     ...data

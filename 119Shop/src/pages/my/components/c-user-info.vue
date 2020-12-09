@@ -4,7 +4,7 @@
         <div class="yx-center">
             <!-- 修改用户信息 -->
             <img src="../../../../public/images/public/edit.png" @click="edit">
-            <img v-if="getUserInfo" :src="getUserInfo.avatarUrl | addImagePrefix">
+            <img v-if="getUserInfo" src="../../../../public/images/public/qq.jpg">
             <span v-if="getUserInfo">{{getTimeStr()}}</span>
             <span class="nick-name">{{getUserInfo.nickName | formatString}}</span>
         </div>

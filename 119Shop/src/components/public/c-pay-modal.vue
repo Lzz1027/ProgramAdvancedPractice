@@ -4,7 +4,7 @@
                  :is-show-modal="showPay" :is-custom="true" :width="'400px'" bg-color="#fff" @hide="hide">
             <div class="pay-container" slot="custom">
                 <div class="yx-center" v-if="!isSetKey">
-                    <span class="title">丑小喵商城</span>
+                    <span class="title">119商城</span>
                     <c-money :money="shouldPayMoney" color="#333"/>
                 </div>
                 <div class="pay-input-container" :class="isSetKey ? 'set-key' : ''">

@@ -21,7 +21,7 @@
                 <!--                <c-paging class="paging"/>-->
                 <div class="load-infinite infinite-list" v-infinite-scroll="loadMore"
                      infinite-scroll-disabled="busy" infinite-scroll-distance="10">
-                    <img src="../../assets/loading-svg/dual-ball-gray.svg" v-show="loading">
+                    <img src="../../assets/loading-svg/loading-bars.svg" v-show="loading">
                 </div>
             </div>
         </div>
@@ -97,6 +97,7 @@
                 this.num = num
             },
             onPriceChange(priceRange) {
+                console.log(this.$store.getters.getUserInfo.id)
                 console.log(priceRange)
                 pGetGoodsList.priceRange = priceRange
                 this._resetPageNum()

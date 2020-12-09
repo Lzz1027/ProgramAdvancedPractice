@@ -14,7 +14,7 @@
                     <i class="el-icon-warning">邮箱格式不正确</i>
                 </div>
                 <el-input
-                        :placeholder="isResetPassword ? '请输入新密码'  : '请输入新密码'"
+                        :placeholder="isResetPassword ? '请输入新密码'  : '请输入密码'"
                         :type="isShowPwd ? 'text' : 'password'"
                         v-model="input.password">
                     <img slot="prefix" src="./../../../public/images/public/pwd.png"/>
@@ -174,7 +174,10 @@
                     // 获取账户余额
                     res.userInfo.balance = await this.fetchBalance()
                     console.log(res)
-                    this.$store.dispatch('saveUserInfo', res.userInfo)
+                    let userInfo = new Object()
+                    userInfo = res.userInfo
+                    userInfo.id = res.userId
+                    this.$store.dispatch('saveUserInfo', userInfo)
                     this.$bus.$emit('login')
                     this._hideLoginModal()
                 })
